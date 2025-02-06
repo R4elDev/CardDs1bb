@@ -45,3 +45,113 @@ a {
 .menu img {
     height: 20px;
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.grupao{
+    background-color: #EA2744;
+    border-radius: 10px;
+    box-shadow: rgb(99, 95, 95) 0px 0px 15px;
+}
+
+
+.card {
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.textos {
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    color: #EA2744;
+}
+
+
+.desc{
+    font-size: 10px;
+    width: 85%;
+    color: gray;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: orange 0px 0px 5px;
+    width: 300px;
+    height: 230px;
+}
+
+.variacoes {
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    gap: 5px;
+}
+
+
+
+.valor h1 {
+    font-weight: bold;
+}
+
+.subtitulo h1 {
+    gap: 15px;
+    font-size: 12px;
+    color: #424649;
+}
+
+.duracao {
+    display: flex;
+    gap: 15px;
+    color: #7c8186;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+}
+
+.carrinho h1 {
+    background-color: #FFB410;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+
+
+
