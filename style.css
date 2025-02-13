@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: fantasy;
 }
 
 ul,ol,li{
@@ -19,11 +20,15 @@ a {
     color: inherit;
 }
 
+main {
+    background-color: black;
+}
+
 .menu {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 16px;
 }
@@ -52,28 +57,27 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 
-.grupao{
-    background-color: #EA2744;
-    border-radius: 10px;
-    box-shadow: rgb(99, 95, 95) 0px 0px 15px;
-}
+
 
 
 .card {
+    box-shadow: rgb(255, 255, 255) 0px 0px 10px;
+    border-radius: 10px;
     height: 500px;
     width: 350px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top-left-radius: 70px;
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: rgb(255, 255, 255) 0px 0px 30px;
+    transition: 1s;
 }
 
 .textos {
@@ -90,18 +94,27 @@ a {
 
 
 .desc{
+    margin-top: 10px;
     font-size: 10px;
     width: 85%;
     color: gray;
 }
 
 .foto{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: orange 0px 0px 5px;
+    border-radius: 30px;
     width: 300px;
     height: 230px;
+}
+
+.foto img{
+    padding: 10px;
+    width: 200px;
+    height: 200px;
 }
 
 .variacoes {
@@ -118,6 +131,7 @@ a {
 
 .valor h1 {
     font-weight: bold;
+    font-size: 35px;
 }
 
 .subtitulo h1 {
@@ -130,7 +144,10 @@ a {
     display: flex;
     gap: 15px;
     color: #7c8186;
+
 }
+
+
 
 .carrinho{
     display: flex;
