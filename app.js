@@ -111,10 +111,18 @@ function criarCards(produto){
     duracao.className = 'duracao'
 
     const duracoes = document.createElement('div')
-    duracoes.className = 'duracoes'
-    const duracoesP = document.createElement('p')
 
+    
+    produto.duracoes.forEach(function(item){
+        const div1 = document.createElement('div')
+        const p1 = document.createElement('p')
 
+        p1.textContent = item
+
+        div1.appendChild(p1)
+        duracao.appendChild(div1)
+    })
+    
     const carrinho = document.createElement('div')
     carrinho.className = 'carrinho'
 
@@ -128,18 +136,11 @@ function criarCards(produto){
     valorH.textContent = produto.preco
     subtituloH.textContent = produto.duration
 
-    produtos.forEach(function(item){
-        duracoesP.textContent = item.duracoes.join(' ')
-    })
-
-
-
     carrinhoH.textContent = produto.cart
 
 
     // Adicionando aos pais
     carrinho.appendChild(carrinhoH)
-    duracoes.appendChild(duracoesP)
     duracao.appendChild(duracoes)
     variacoes.appendChild(duracao)
     valor.appendChild(valorH)
